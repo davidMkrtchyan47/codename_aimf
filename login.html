@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Profiler
+    </title>
+    <link rel="stylesheet" type="text/css" href="style/login.css">
+</head>
+<body>
+<div class="wrapper" id="wr">
+
+    <h1>PROFILER</h1>
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="container">
+
+
+    <form id="form">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button type="submit" id="login-button">Login</button>
+        <p id="Err_text">ERROR fucked up</p>
+        <p id="DH_Param">Don't have account? <a id = "reg" href="#" >Register</a></p>
+    </form>
+
+    <form id="form_reg">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="password2" placeholder="Repeat Password">
+        <button type="submit" id="register_btn">Register</button>
+        <p id="HI_Param">Already have account? <a id="sign" href="#" >Sign In</a></p>
+    </form>
+
+    <div class="simple-spinner" id="load">
+        <span></span>
+    </div>
+
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="src/login_ui.js"></script>
+</html>
