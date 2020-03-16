@@ -1,3 +1,7 @@
+#main_container{
+    display: none;
+}
+
 :root {
     --bc: #efeeee;
     --white: #ffffff;
@@ -49,7 +53,7 @@ html, body {
     align-items: center;
 }
 .user-header-inner {
-    width: 80%;
+    width: 70%;
     min-height: 15vh;
     display: flex;
     justify-content: center;
@@ -123,7 +127,7 @@ html, body {
     margin: 3em 0;
 }
 .user-page-inner {
-    width: 80%;
+    width: 50%;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;

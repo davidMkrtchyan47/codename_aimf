@@ -1,3 +1,7 @@
+window.onload = () => {
+    $("#main_container").fadeIn(500);
+};
+
 $("#img1").on({
     mouseenter: function () {
         $("#iov1").css("opacity", "1");
