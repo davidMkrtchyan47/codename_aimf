@@ -27,18 +27,19 @@
 
 
     <form id="form">
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
+        <input type="text" placeholder="Username" id="login_uname">
+        <input type="password" placeholder="Password" id="login_pswd">
         <button type="submit" id="login-button">Login</button>
-        <p id="Err_text">ERROR fucked up</p>
+        <p id="Err_text_login"></p>
         <p id="DH_Param">Don't have account? <a id = "reg" href="#" >Register</a></p>
     </form>
 
     <form id="form_reg">
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-        <input type="password2" placeholder="Repeat Password">
+        <input type="text" placeholder="Username" id="reg_uname">
+        <input type="password" placeholder="Password" id="reg_pswd1">
+        <input type="password2" placeholder="Repeat Password" id="reg_pswd2">
         <button type="submit" id="register_btn">Register</button>
+        <p id="Err_text_reg"></p>
         <p id="HI_Param">Already have account? <a id="sign" href="#" >Sign In</a></p>
     </form>
 
@@ -49,6 +50,8 @@
 </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+<script src="src/config.js"></script>
+<script src="plugins/axios.js"></script>
+<script src="src/login_logic.js"></script>
 <script src="src/login_ui.js"></script>
 </html>

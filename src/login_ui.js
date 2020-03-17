@@ -1,7 +1,19 @@
 let _fade_time = 500;
-$("#login-button").click(function(event){
+$("#login-button").click(async function(event){
+    await _hide_error_login();
     event.preventDefault();
+    let data = await check_input();
+    if(!data){
+        await _show_error_login("Input username and password");
+        return;
+    }
     login_fade(false);
+    let login = await proceed_Login(data);
+    if(!login){
+        login_fade(true);
+        await _show_error_login("Incorrect username or password");
+        return;
+    }
     setTimeout(function () {
         fade_everything();
     }, 2*_fade_time);
@@ -11,6 +23,18 @@ $("#login-button").click(function(event){
     //window.location = "profile.html";
    // $('.wrapper').addClass('form-success');
 });
+
+let _show_error_login = async (text) => {
+    let errText = $("#Err_text_login");
+    errText.text(text);
+    errText.fadeIn(_fade_time);
+};
+
+let _hide_error_login = async () => {
+    let errText = $("#Err_text_login");
+    errText.fadeOut(_fade_time);
+};
+
 
 $("#register_btn").click(function (event) {
    event.preventDefault();

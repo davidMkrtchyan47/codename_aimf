@@ -255,12 +255,20 @@ form button:hover {
     padding: inherit;
 }
 
-#Err_text{
+#Err_text_login{
     padding: 5px 0 0px 0px;
     color: crimson;
     font-size: 140%;
     display: none;
 }
+
+#Err_text_reg{
+    padding: 5px 0 0px 0px;
+    color: crimson;
+    font-size: 140%;
+    display: none;
+}
+
 
 #form{
     display: block;
